@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<title>VIRTUAL KEYBOARD</title>
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="pragma" content="no-cache" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/system_icon.png" />
+	
+	<link rel="stylesheet" href="css/keyboard.css" type="text/css" />
+	<link rel="stylesheet" href="css/keyboard_alpha_numeric.css" type="text/css" />
+	<link rel="stylesheet" href="css/keyboard_numeric.css" type="text/css" />
+	
+	<!--
+    <link rel="stylesheet" href="css/estilos_360x640.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilos_640x360.css" type="text/css" />
+    -->
+
+	<script src="js/settings.js" type="text/javascript"></script>
+    <script src="js/keyboard.js" type="text/javascript"></script>
+    <!--<script src="js/jquery.js" type="text/javascript"></script>-->
+    <!--<script>carregar_listas_salvas( 'div_mostra_listas_salvas' );</script>-->
+	
+</head>
+<body onselectstart="return false">
+
+<div id="div_general_conteiner">
+	
+	<h3>Alpha-Numeric</h3>
+	<input type="text" id="input_alpha_numeric" onClick="return KeyboardOpen( 'alpha_numeric', 'input_alpha_numeric' );" readonly="true" />
+    
+	<h3>Numeric</h3>
+	<input type="text" id="input_numeric" onClick="return KeyboardOpen( 'numeric', 'input_numeric' );" readonly="true" />
+    
+	<h3>Money</h3>
+	<input type="text" id="input_money" onClick="return KeyboardOpen( 'money', 'input_money' );" value="0,00" readonly="true" />
+    
+    <div id="div_view_storage_values"></div>
+
+    <div id="div_keyboard_alpha_numeric">
+	
+		<table id="table_keyboard_alpha_numeric_1">
+		
+			<tr>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'q' );" class="a_chars">
+						q
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'w' );" class="a_chars">
+						w
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'e' );" class="a_chars">
+						e
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'r' );" class="a_chars">
+						r
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 't' );" class="a_chars">
+						t
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'y' );" class="a_chars">
+						y
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'u' );" class="a_chars">
+						u
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'i' );" class="a_chars">
+						i
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'o' );" class="a_chars">
+						o
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'p' );" class="a_chars">
+						p
+					</a>
+				</td>
+			</tr>
+		
+		</table>
+
+		<table id="table_keyboard_alpha_numeric_2">
+		
+			<tr>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'a' );" class="a_chars">
+						a
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 's' );" class="a_chars">
+						s
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'd' );" class="a_chars">
+						d
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'f' );" class="a_chars">
+						f
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'g' );" class="a_chars">
+						g
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'h' );" class="a_chars">
+						h
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'j' );" class="a_chars">
+						j
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'k' );" class="a_chars">
+						k
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'l' );" class="a_chars">
+						l
+					</a>
+				</td>
+			</tr>
+		
+		</table>
+
+		<table id="table_keyboard_alpha_numeric_3">
+		
+			<tr>
+            	<td class="td_capslock">
+					<a onClick="return EmuleKeyCapslock( 'capslock' );" class="a_capslock">
+						<img src="img/keyboard_alpha_numeric_capslock.png" class="img_alpha_numeric_extra_functions" />
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'z' );" class="a_chars">
+						z
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'x' );" class="a_chars">
+						x
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'c' );" class="a_chars">
+						c
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'v' );" class="a_chars">
+						v
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'b' );" class="a_chars">
+						b
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'n' );" class="a_chars">
+						n
+					</a>
+				</td>
+            	<td class="td_chars">
+					<a onClick="return EmuleKeyAlphaNumeric( 'm' );" class="a_chars">
+						m
+					</a>
+				</td>
+            	<td class="td_backspace">
+					<a onClick="return EmuleKeyBackspace( 'backspace' );" class="a_backspace">
+						<img src="img/keyboard_alpha_numeric_backspace.png" class="img_alpha_numeric_extra_functions" />
+					</a>
+				</td>
+			</tr>
+		
+		</table>
+
+		<table id="table_keyboard_alpha_numeric_4">
+		
+			<tr>
+            	<td class="td_123">
+					<a onClick="return ChangeKeyboard( 'numeric' );" class="a_123">
+						123
+					</a>
+				</td>
+            	<td class="td_space">
+					<a onClick="return EmuleKeyAlphaNumeric( ' ' );" class="a_space">
+						Space
+					</a>
+				</td>
+            	<td class="td_enter">
+					<a onClick="return EmuleKeyEnter( 'enter' );" class="a_enter">
+						<img src="img/keyboard_alpha_numeric_enter.png" class="img_alpha_numeric_extra_functions" />
+					</a>
+				</td>
+			</tr>
+		
+		</table>
+
+		<table id="table_keyboard_alpha_numeric_5">
+		
+			<tr>
+            	<td class="td_extra_functions">
+					<a onClick="return EmuleKeyClean( 'clean' );" class="a_extra_functions">
+						<img src="img/keyboard_alpha_numeric_clean.png" class="img_alpha_numeric_extra_functions" />
+					</a>
+				</td>
+            	<td class="td_extra_functions">
+					<a onClick="return EmuleKeyClose( 'close' );" class="a_extra_functions">
+						<img src="img/keyboard_alpha_numeric_close.png" class="img_alpha_numeric_extra_functions" />
+					</a>
+				</td>
+            	<td class="td_extra_functions">
+					<a onClick="return ToggleFullScreen();" class="a_extra_functions">
+						<img src="img/keyboard_alpha_numeric_fullscreen.png" class="img_alpha_numeric_extra_functions" />
+					</a>
+				</td>
+			</tr>
+		
+		</table>
+		
+	</div>
+    
+    <div id="div_keyboard_numeric">
+    	
+        <table id="table_keyboard_numeric">
+            
+            <tr>
+                <td rowspan="2" class="td_functions">
+					<a onClick="return EmuleKeyClean( 'clean' );" class="a_functions">
+						<img src="img/keyboard_numeric_clean.png" class="img_functions" />
+					</a>
+				</td>
+				
+            	<td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '1' );" class="a_numeric">
+						1
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '2' );" class="a_numeric">
+						2
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '3' );" class="a_numeric">
+						3
+					</a>
+				</td>
+
+                <td rowspan="2" class="td_functions">
+					<a onClick="return EmuleKeyBackspace( 'backspace' );" class="a_functions">
+						<img src="img/keyboard_numeric_backspace.png" class="img_functions" />
+					</a>
+				</td>
+			</tr>
+            
+            <tr>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '4' );" class="a_numeric">
+						4
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '5' );" class="a_numeric">
+						5
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '6' );" class="a_numeric">
+						6
+					</a>
+				</td>
+			</tr>
+            
+            <tr>
+                <td rowspan="2" class="td_functions">
+					<a onClick="return EmuleKeyClose( 'close' );" class="a_functions">
+						<img src="img/keyboard_numeric_close.png" class="img_functions" />
+					</a>
+				</td>
+				
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '7' );" class="a_numeric">
+						7
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '8' );" class="a_numeric">
+						8
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '9' );" class="a_numeric">
+						9
+					</a>
+				</td>
+                
+                <td rowspan="2" class="td_functions">
+					<a onClick="return EmuleKeyEnter( 'enter' );" class="a_functions">
+						<img src="img/keyboard_numeric_enter.png" class="img_functions" />
+					</a>
+				</td>
+			</tr>
+        
+        	<tr>
+                <td class="td_numeric">
+					<a onClick="return ChangeKeyboard( 'alpha_numeric' );" class="a_numeric a_abc">
+						abc
+					</a>
+				</td>
+                <td class="td_numeric">
+					<a onClick="return EmuleKeyNumeric( '0' );" class="a_numeric">
+						0
+					</a>
+				</td>
+                <td class="td_numeric td_fullscreen">
+					<a onClick="return ToggleFullScreen();" class="a_numeric a_fullscreen">
+						<img src="img/keyboard_numeric_fullscreen.png" class="img_functions img_fullscreen" />
+					</a>
+				</td>
+			</tr>
+            
+        </table>
+	</div>
+
+</div>
+
+</body>
+</html>
+        

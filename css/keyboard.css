@@ -1,0 +1,63 @@
+
+* {
+	margin: 0px; 
+	padding:0px; 
+	font-family: Arial;
+}
+
+body { margin: 0px; padding: 0px; }
+
+h3 {
+	margin: 5px;
+}
+
+#div_general_conteiner {
+	width: 360px;
+	height: 640px;
+	margin: 0px auto;
+	padding: 0px;
+	overflow: hidden;
+	text-align: center;
+	background-color: #F1F1F1;
+}
+
+#input_alpha_numeric {
+	width: 350px;
+	height: 40px;
+	margin: 10px auto;
+	font-size: 25px;
+	color: #888888;
+	border: solid #FFFFFF 1px;
+	background-color: #DEDEDE;
+}
+
+#input_numeric {
+	width: 350px;
+	height: 40px;
+	border: solid #FFFFFF 1px;
+	margin: 10px auto;
+	font-size: 25px;
+	color: #888888;
+	background-color: #DEDEDE;
+}
+
+#input_money {
+	width: 350px;
+	height: 40px;
+	border: solid #FFFFFF 1px;
+	margin: 10px auto;
+	font-size: 25px;
+	color: #888888;
+	text-align: center;
+	background-color: #DEDEDE;
+}
+
+#div_view_storage_values {
+	width: 200px;
+	height: auto;
+	margin: 30px auto;
+	padding: 0px;
+	display: none;
+	background-color: #FFFFFF;
+}
+

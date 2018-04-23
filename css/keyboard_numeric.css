@@ -1,0 +1,188 @@
+
+/* TECLADO NUMERICO  */
+
+#div_keyboard_numeric {
+	width: 360px;
+	height: auto;
+	border: none;
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1000;
+	background-color: #C1C1C1;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric {
+	width: 360px;
+	height: auto;
+	border: none;
+	border-top: solid #BBBBBB 5px;
+	border-collapse: collapse;
+	text-align: center;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric td {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial !important;
+	border: solid #CCCCCC 1px;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric {
+	text-align: center;
+	vertical-align: middle;
+	width: 70px;
+	height: auto;
+	background-color: #F5F5F5;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_numeric {
+	font-size: 25px;
+	width: 100%;
+	height: 40px;
+	padding: 0px;
+	padding-top: 10px;
+	display: block;
+	cursor: pointer;
+	color: #333333;
+	background-color: #F5F5F5;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_fullscreen {
+	width: 100%;
+	height: 50px;
+	padding: 0px;
+	display: block;
+	cursor: pointer;
+	color: #333333;
+	background-color: #F5F5F5;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_abc,
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_fullscreen {
+	color: #FFFFFF;
+	background-color: #5C5C5C;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_numeric:hover {
+	color: #FFFFFF;
+	background-color: #00BFFF;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_abc:hover,
+#div_keyboard_numeric #table_keyboard_numeric .td_numeric .a_fullscreen:hover  {
+	color: #FFFFFF;
+	background-color: #00BFFF;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_functions {
+	text-align: center;
+	vertical-align: middle;
+	width: 70px;
+	height: auto;
+	background-color: #F5F5F5;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_functions .a_functions {
+	width: 100%;
+	height: 101px;
+	display: block;
+	cursor: pointer;
+	color: #FFFFFF;
+	background-color: #5C5C5C;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_functions .a_functions:hover {
+	color: #FFFFFF;
+	background-color: #00BFFF;
+}
+
+#div_keyboard_numeric #table_keyboard_numeric .td_functions .a_functions .img_functions {
+	width: 100%;
+	height: 101px;
+	border: none;
+	
+	/*Impedindo a selecao de conteudo*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#seletor {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
